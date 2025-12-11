@@ -27,4 +27,28 @@ Projeto desenvolvido durante o curso Profissão: Cientista de Dados. O objetivo 
   * Qual a relação entre gênero e score?
     - Homens tendem a scores mais altos
 
-- Etapa 4: 
+- Etapa 3.1: Análise de correlação e plotagem da matriz com plotly. As variáveis mais correlacionadas foram idade e renda, o que é reforçado pela análise bivariada.
+- Etapa 3.2: Tratamento de variáveis categóricas com LabelEncoder, que foi escolhido por seu melhor desempenho em problemas de classificação.
+- Etapa 3.3: Plotagem da correlação com as variáveis categóricas convertidas. Aqui, os resultados foram:
+  
+  * Altas correlações negativas para:
+    - Posse de imóveis e idade
+    - Estado civil e idade
+    - Número de filhos e gênero
+    - Estado civil e renda
+    - Posse de imóveis e renda
+    - Número de filhos e estado civil
+
+  * Altas correlações positivas em:
+    - Gênero e renda;
+    - Idade e renda;
+    - Educação e renda;
+    - Estado civil e posse de imóveis.
+      
+- Etapa 3.5: Separação em bases de treino e teste com train_test_split. Aqui, foi escolhido 25% como tamanho do conjunto teste e random_state = 42 para garantir repetibilidade dos resultados. Em seguida, verificou-se se os tamanhos dos conjuntos estavam corretos. 
+- Etapa 3.6: Verificação do balanceamento do conjunto de treino com countplot, provando que a coluna não era balanceada.
+- Etapa 3.7: Balanceamento do conjunto de treino com SMOTE e verificação dos resultados.
+- Etapa 3.8: Salvamento dos conjuntos de treino e teste para aplicação em projetos posteriores.
+
+## Resultados
+Neste projeto, foi possível aplicar todas as etapas de pré-processamento de dados, de forma que o conjunto foi bem preparado para aplicação em modelos de machine learning. 
